@@ -8,7 +8,7 @@ void main(){
         if(ch>=97 && ch<=122 )
         printf("character is in lowercase");
         else{
-            printf("not");
+            printf("character is not in lowercase");
 
         }
             

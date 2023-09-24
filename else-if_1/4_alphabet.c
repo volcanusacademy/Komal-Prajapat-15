@@ -8,7 +8,7 @@ void main(){
         if((ch>='a' && ch<='z')||( ch>='A' && ch<='Z'))
         printf("character is alphabet");
         else{
-            printf("not");
+            printf("character is not a alphabet");
 
         }
             

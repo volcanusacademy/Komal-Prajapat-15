@@ -8,7 +8,7 @@ void main(){
         printf("character is in uppercase");
         }
         else{
-        printf("no");
+        printf("character is not in uppercase");
 
         }
             
