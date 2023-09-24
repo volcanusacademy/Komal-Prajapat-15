@@ -2,5 +2,5 @@
 
 #include<stdio.h>   //including header file
 void main(){        //main function
-    printf("hello");    //print our output 
+    printf("Hello Developer");    //print our output 
 }
