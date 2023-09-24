@@ -36,8 +36,8 @@ void main(){
     scanf("%d",&num2);    //user input
 
    add(num1,num2);  //calling add function  
-   sub(num1,num2);  //calling add function
-   mult(num1,num2); //calling add function
-   div(num1,num2);  //calling add function
+   sub(num1,num2);  //calling sub function
+   mult(num1,num2); //calling mult function
+   div(num1,num2);  //calling div function
    
 }
