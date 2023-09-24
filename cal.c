@@ -13,10 +13,21 @@ void mult(int num1,int num2){       //multiplication function
     int mult=num1*num2;          
  printf("multiplicatin of %d * %d = %d \n" , num1,num2,mult);
 }
-void div(int num1,int num2){        //division function     
-    int sum=num1/num2;          
- printf("division of %d / %d = %d \n" , num1,num2,sum);
+void div(int num1,int num2){        //division function  
+int div ;    
+  if(num2 == 0 ) {
+    printf("Cannot divide by zero");
+    } 
+  else if(num1==0){
+        printf("Result is undefined");
+    } 
+else
+{
+div = num1/num2;          
+ printf("division of %d / %d = %d \n" , num1,num2,div);
 }
+}
+
 void main(){
     int num1,num2;
     printf("enter num1:- ");
