@@ -1,0 +1,23 @@
+Bus Information Between Indore, Ujjain, and Bhopal
+
+Route: Indore to Ujjain
+- Bus Company:  Mahakal Travels
+- Departure Time: 7:00 AM
+- Arrival Time: 9:30 AM
+- Duration: 2 hours 30 minutes
+- Ticket Price: 100Rs
+
+Route: Ujjain to Bhopal
+- Bus Company: Mhashkti Roadways
+- Departure Time: 10:00 AM
+- Arrival Time: 2:00 PM
+- Duration: 4 hours
+- Ticket Price: 150Rs
+
+Route: Indore to Bhopal (via Ujjain)
+- Bus Company: Travel India Express
+- Departure Time: 6:30 AM
+- Arrival Time: 3:30 PM
+- Duration: 9 hours
+- Ticket Price: 300Rs
+
