@@ -1,29 +1,37 @@
-//header file
 #include<iostream>
+#include<string.h>
 using namespace std;
-class Area{
-    public :
-void area_square(){//area_square function
-int r =2;  // variable declaration  
-cout<<"\nArea of square:- "<<2*3.14*r*r;// 
-}
-public :
-void area_triangle(){
-int l=10 , b=10 ; //variable declaration 
-cout<<"\nArea of Triangle:-  "<< 1/2*(l*b);
-}
+class Shape{
+string color;
 public:
-void area_rectangle(){
-    int l=12,b=12; //variable declaration 
-cout<<"\nArea of reactangle:- "<<l*b;
+void getArea(){
 }
 };
-// main function which have int data type
+class Circle:public Shape{
+void getArea(int* r){
+    float area_cirlce = 3.14 * r * r ;
+    cout<<"Area of circle :- "<<area_cirlce;
+}
+};
+class Reactangle:public Shape{
+void getArea(int l , int b){
+    int area_reactangle = l*b;
+    printf("%d",area_reactangle);
+}
+};
+class Triangle:public Shape{
+void getArea(int l , int b){
+    int area_reactangle =1/2*( l*b);
+    printf("%d",area_reactangle);
+}
+};
 int main(){
-    //creating obj of Area class
-Area obj;
-obj.area_square();  //calling of area_square function
-obj.area_triangle();//calling of area_triangle function
-obj.area_rectangle();//calling of area_rectangle function
+Shape obj;
+int r,l,b;
+cout<<"Enter r , l ,b  :- ";
+cin>>r>>l>>b;
+obj.getArea(r);
+obj.getArea(l,b);
+obj.getArea(l,b);
 return 0;
 }
