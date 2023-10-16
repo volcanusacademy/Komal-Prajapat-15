@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Assessment</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="con1">
+        <h1 class="heading">Food Ordering Assessment</h1>
+    </div>
+
+<center>
+<div id="food_box">
+    <div class="con">
+        <BR><BR>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Bnm-xB_mWdeaq-CsnQDY6wHaHa&pid=Api&P=0&h=180" class="logo">
+        <h1>WELCOME </h1><br><Br>
+       <h3 class="slogan">" From Our Kitchen<Br> to Your Heart "</h3>
+    </div>
+    <div class="con_2">
+        <form id="food-order-assessment">
+            <div class="question">
+                <label>What type of cuisine are you in the mood for?</label><br>
+                <input type="radio" name="cuisine" value="Italian"> Italian
+                <input type="radio" name="cuisine" value="Mexican"> Mexican
+                <input type="radio" name="cuisine" value="Chinese"> Chinese
+            </div><BR>
+            <div class="question">
+                <label>How spicy do you like your food?</label><br>
+                <input type="radio" name="spice-level" value="Mild"> Mild
+                <input type="radio" name="spice-level" value="Medium"> Medium
+                <input type="radio" name="spice-level" value="Spicy"> Spicy
+            </div><br>
+            <div class="question">
+                <label>Choose a food item you'd like to order.</label><br>
+                <input type="radio" name="food-item" value="Burger"> Burger
+                <input type="radio" name="food-item" value="Pizza"> Pizza
+                <input type="radio" name="food-item" value="Pasta"> Pasta
+                <input type="radio" name="food-item" value="Sushi"> Sushi
+            </div><br>
+            <div class="question">
+                <label>How many servings do you want to order?</label><br>
+                <input type="number" name="servings" min="1">
+            </div>
+            <div class="question">
+                <label>Any specific dietary preferences or allergies?</label><br>
+                <textarea name="dietary-preferences"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+</center> 
+</body>
+</html>

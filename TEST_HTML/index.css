@@ -1,0 +1,84 @@
+*{
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+body{
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.aqaQvPjDXDEM1mD742lLRgHaDX&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+#food_box{
+    margin-top:30px ;
+    width: 65%;
+    height: 400px;
+    background: #bba6a6;
+    text-align: left;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#food_box:hover{
+    transform: scale(1.1);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    top: -20px;
+}
+.con1{
+    background: #000;
+    width: 100%;
+    height:40px ;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: Algerian;
+    color: chocolate;
+    
+}
+.heading:hover{
+    transform: scale(1.1);
+}
+.con{
+background-image: url(img.jpg);
+width: 250px;
+height: 320px;
+padding:20px;
+margin-right: 500px;
+/* font-family: Algerian; */
+}
+.slogan{
+    color: white;
+}
+.slogan:hover{
+    color: black;
+
+}
+.con_2{
+    padding:20px;
+    margin-top: 75px;
+    text-align: left;
+    width: 430px;
+    height: 320px;
+    background-color: rgb(247, 248, 249);
+    position: relative;
+    top: -410px;
+    left: 360px;
+    margin-right: 500px;
+    border-radius: 3%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.button{
+    width: 150px;
+    background: blue;
+}
+.forgot{
+   margin-left: 150px;
+}
+
+/* form */
+.question{
+    color: rgb(11, 11, 12);
+}
