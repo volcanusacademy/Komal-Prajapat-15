@@ -1,0 +1,383 @@
+*{  
+    padding: 0px;
+margin: 0px;;
+}
+body{
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.xzTRZHJAnfIuz8qX2Z1mkQHaEo&pid=Api&P=0&h=180);
+    /* background-color: rgb(23, 23, 50); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    
+}
+.logo:hover{
+    transform: scale(1.1);
+
+}
+.logo_name{
+    color: white;
+    font-size: large;
+    font-family: Algerian;
+    margin-right: 400px;
+}
+.con1{
+    padding:5px 30px 15px 10px ;
+    background: #000;
+    height: 50px;
+    width: 100%;
+    color: aliceblue;
+    text-align: right;
+    
+}
+.navbar,a{
+
+    font-size: large;
+    padding: 3px;
+    color: white;
+    ;
+    text-decoration: none;
+    margin-right: 50px;
+}
+a:hover{
+    background: #ddadad;
+    color: rgb(71, 10, 10);
+    border-radius: 3%;
+}
+.conatnier{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:150px 100px 0 200px; 
+   
+}
+.welcome{
+    position: relative;
+    top: -50px;
+    background: white;
+    color: black;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 10px 10px lightblue;
+}
+.welcome:hover {
+    background-color:black;
+    color: white;
+    
+    transform: scale(1.1);
+}
+.img{
+
+    height: 300px;
+    width: 300px;
+    float: right;
+    border-radius: 100%;
+      
+    box-shadow: 10px 10px 10px 10px  rgb(128, 136, 227) ;
+    /* left: 30px; */
+}
+.img_1:hover {
+   
+    transform: scale(1.1);
+}
+.img_1{
+    position: relative;
+    top: 300px;
+    left: 200px;
+    float: left;
+    position: relative;
+    top: -280px;
+    left: 500px;
+
+}
+
+
+/* About 2nd page */
+.img_2{
+    position: relative;
+    top: 120px;
+    left: -300px;
+    float: left;
+
+
+}
+.about_me{
+    margin-right: 50px;
+    height: 5000px;
+    width: 500px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:150px 100px 0 200px; 
+    float: right; 
+    position: relative;
+    top: -300px;
+    }
+ 
+
+
+/* Skill */
+#skill{
+    /* background: #000; */
+    width: 70%;
+    height: 400px;
+    position: relative;
+    left: 200px;
+background-image: url("https://tse4.mm.bing.net/th?id=OIP.pV2j2V4EoPW07M9KwXiv3wHaE8&pid=Api&P=0&h=180");
+background-repeat: no-repeat;
+background-size: cover;
+
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+.skill_h1{
+margin: 100px 0 40px 0;
+color: rgb(199, 224, 246); 
+font-size: 40px;
+font-family: Algerian;
+
+}
+.skill_h1:hover{
+    color: white;
+transform: scale(1.1);
+}
+.skill-bar {
+    background-color: #dea7a7;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    margin-left: 60px;
+
+}
+
+.skill {
+    text-align: right;
+    padding: 10px;
+    color: #fff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+}
+
+.react {
+    background-color: #2dd18d; 
+    width: 70%;
+    height: 30px;
+}
+.react:hover{
+    background-color:rgb(24, 17, 209);
+    color:black;
+    font-size: larger;
+    transform: scale(1.1);
+}
+.c {
+    background-color: #555555; 
+    width: 70%;
+    height: 30px;
+}
+
+.c:hover {
+    background-color:rgb(24, 17, 209);
+    color:black;
+    font-size: larger;
+    transform: scale(1.1);
+
+}
+/* skill cpp */
+.cpp {
+    background-color: #6495ED; 
+    width: 60%;
+}
+.cpp:hover {
+    background-color:rgb(24, 17, 209);
+    color:black;
+    font-size: larger;
+    transform: scale(1.1);
+}
+/* skill html */
+
+.html {
+    background-color: #e44d26; 
+    width: 60%;
+}
+.html:hover {
+    background-color:rgb(24, 17, 209);
+    color:black;
+    font-size: larger;
+    transform: scale(1.1);
+}
+/* skill css */
+.css {
+    background-color: #264de4; 
+    width: 50%;
+}
+.css:hover {
+     background-color:rgb(24, 17, 209);
+    color:black;
+    font-size: larger;
+    transform: scale(1.1);}
+/* skill js  */
+    .js {
+    background-color: #f0db4f; 
+    width: 50%;
+}
+.js:hover {
+    background-color:rgb(24, 17, 209);
+    color:black;
+    font-size: larger;
+    transform: scale(1.1);}
+/* skill java  */
+    .java {
+    background-color: #007396; 
+    width: 60%;
+}
+.java:hover {
+     background-color:rgb(24, 17, 209);
+    color:black;
+    font-size: larger;
+    transform: scale(1.1);}
+/* skill end */
+    /* project */
+    
+    
+.project_h{
+    margin: 10px 0 10px 0;
+    color: rgb(199, 224, 246); 
+    font-size: 40px;
+    font-family: Algerian;
+}
+.project_h:hover{
+    color: white;
+    transform: scale(1.1);   
+}
+
+    .div{
+        background-image: url("https://tse4.mm.bing.net/th?id=OIP.pV2j2V4EoPW07M9KwXiv3wHaE8&pid=Api&P=0&h=180");
+        background-repeat: no-repeat;
+        background-size: cover;
+         width: 65%;
+        height: 300px;
+        position: relative;
+        top: 100px;
+        
+        
+    }
+    .box1,.box2,.box3{
+        border-radius: 3%;
+        background:rgb(144, 144, 175);
+        width: 200px;
+        height: 200px;
+        /* margin-left: 50px; */
+        padding: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        
+    }
+    
+    
+    .box2{
+        position: relative;
+        left: -300px;
+        top: -200px;
+        margin-left: 20px;
+    }
+    .box3{
+        position: relative;
+        left: -20px;
+        top: -440px;
+        margin-left: 20px;
+    }
+    .box1{
+        position: relative;
+        left: 280px;
+        top: 40px;
+        margin-left: 20px;
+    }
+    .box1:hover {
+
+        transform: scale(1.1);
+        font-size: larger;
+        
+    }
+    .box2:hover {
+        /* background-color:black; */
+        /* color: white; */
+        transform: scale(1.1);
+    }
+    .box3:hover {
+        /* background-color:black; */
+        /* color: white; */
+        transform: scale(1.1);
+    }
+    
+
+
+
+/* contact */
+#Contact{
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.XkR5XOLK9wX34qvrwTMrPwHaEo&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.form_box{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    
+    top: 200px;
+        background-image: url(https://tse3.mm.bing.net/th?id=OIP.DNqBP2r2VKbOWG55BCIJCgHaEK&pid=Api&P=0&w=300&h=300);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+}
+
+
+.form_box2
+{
+   
+    text-align: left;
+    width: 60%;
+    height: 280px;
+    background:white;
+    border-radius: 1%;
+    box-shadow: 2px rgb(191, 51, 51);
+    position: relative;
+    /* left: -270px; */
+    top: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    color: black;
+    
+}
+.contactdel{
+    display: inline-block;
+    color: black;
+    
+}
+/* footer */
+
+#footer{
+    margin-bottom: 0px;
+    margin-top: 200px ;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.footer_info{
+    margin-left: 700px;
+    position: relative;
+    top: -50px;
+}
+.footer_info:hover{
+    color: #bc8f8f;
+    font-size: large;
+    
+}
