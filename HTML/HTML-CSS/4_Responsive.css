@@ -1,0 +1,25 @@
+
+
+.con {
+    width: 50%;
+    margin: 0 auto;
+    background: #fae6e6;
+    padding: 5px;
+    border-radius: 2%;
+    border: 2px solid black;
+}
+
+
+@media (max-width: 768px) {
+    
+    .con {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .con {
+        width: 100%;
+    }
+}

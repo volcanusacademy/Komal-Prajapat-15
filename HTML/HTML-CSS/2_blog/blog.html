@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Page</title>
+</head>
+<body>
+    <h1>Write Your Blog</h1>
+    <form id="blog-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="blog">Write Your Blog:</label>
+        <textarea id="blog" rows="4" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="blog-display">
+        <!-- Blog posts will be displayed here -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const blogForm = document.getElementById("blog-form");
+            const nameInput = document.getElementById("name");
+            const blogInput = document.getElementById("blog");
+            const blogDisplay = document.getElementById("blog-display");
+
+            // Load existing blog posts from local storage
+            const savedBlog = localStorage.getItem("blog");
+            if (savedBlog) {
+                blogDisplay.innerHTML = savedBlog;
+            }
+
+            blogForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Get user input values
+                const name = nameInput.value;
+                const blog = blogInput.value;
+
+                // Display the blog post
+                const blogPost = document.createElement("div");
+                blogPost.innerHTML = `
+                    <h2>${name}</h2>
+                    <p>${blog}</p>
+                `;
+                blogDisplay.appendChild(blogPost);
+
+                // Save the blog to local storage
+                localStorage.setItem("blog", blogDisplay.innerHTML);
+
+                // Clear the form
+                nameInput.value = "";
+                blogInput.value = "";
+            });
+        });
+    </script>
+</body>
+</html>

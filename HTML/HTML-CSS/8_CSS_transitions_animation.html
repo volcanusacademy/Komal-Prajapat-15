@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Add a transition to the element you want to animate */
+  .box {
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.3s ease;
+  }
+  .box1{
+    background: #000;
+  }
+  .box1:hover {
+    background-color:white;
+    border:2px solid black;
+  }
+  .box2{
+   background: #fc0345;
+  }
+.box2:hover{
+    border-radius: 100%;
+  }
+  .box3{
+    background: #d61c9b;
+    transition:1s ;
+  }
+.box3:hover{
+    position: relative;
+    top: 300px;
+} 
+.box4{
+ background: greenyellow;
+ transition-property: all;
+ /* transition-delay: 1s; */
+} 
+.box4:hover{
+    transform: rotate(180deg);
+    background: #b10feb;
+    border-radius: 30%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+     <div class="box1 box "></div><br>
+     <div class="box2 box"></div><br>
+     <div class="box3 box"></div><br>
+     <div class="box4 box "></div><br>
+     <div class="box5 box"></div><br>
+     <div class="box6 box"></div><br>
+</div>
+
+</body>
+</html>
