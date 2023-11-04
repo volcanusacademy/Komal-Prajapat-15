@@ -1,0 +1,65 @@
+
+}
+.container{
+border: 2px solid black;
+}
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#videoList {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+li:hover {
+    color: #0056b3;
+}
+/* Add custom styles to make the page colorful */
+body {
+    background-color: #f0f0f0;
+}
+
+
+.card {
+    background-color: #f8f9fa; /* Light gray background for the card */
+}
+
+.btn-primary {
+    background-color: #ff6600; /* Orange color for the "Add" button */
+}
+
+/* Add more custom styles as needed */

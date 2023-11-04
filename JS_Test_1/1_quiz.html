@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .quiz-container {
+            width:400px;
+            margin:0 auto;
+            background: lightgoldenrodyellow;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius:2% ;
+        }
+        .question {
+            font-size:20px;
+            margin-bottom:10px;
+        }
+        .options {
+            display:flex;
+            flex-direction:column;
+        }
+        .option {
+            margin:5px 0;
+        }
+        .checkans{
+            margin-top: 10px;
+            /* background: green; */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>HTML Quiz</h1></center>
+    <div class="quiz-container">
+        <div class="question" id="question"></div>
+        <div class="options" id="options">
+            <label class="option" id="optionA"><input type="radio" name="answer" value="A"> Option A</label>
+            <label class="option" id="optionB"><input type="radio" name="answer" value="B"> Option B</label>
+            <label class="option" id="optionC"><input type="radio" name="answer" value="C"> Option C</label>
+        </div><br><BR>
+        <button onclick="checkAnswer()" >Check Answer</button>
+        <div id="result" class="checkans"></div>
+        <div id="totalResult"></div> 
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "1. What does HTML Stand",
+                options: ["Hyper Text Markup", "Hyperlink and Text MArkup Language", "High-level Text Markup Language"],
+                correctAnswer: "Hyper Text Markup"
+            },
+            {
+                question: "2. Which HTML tag is used to define the structure of an HTML document?",
+                options: ["<head>", "<html>", "<body>"],
+                correctAnswer: "<html>"
+            },
+            {
+                question: "3. Which HTML tag is used to add a line break in the text?",
+                options: ["<lb>", "<line>","<br>"],
+                correctAnswer: "<br>"
+            },
+            {
+                question: "4. Which HTML tag is used to display an image on a web page?",
+                options: ["<image>", "<picture>", "<img>"],
+                correctAnswer: "<img>"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let correctAnswers = 0; 
+
+        function displayQuestion() {
+            const questionElement = document.getElementById('question');
+            const optionsElement = document.getElementById('options');
+            const resultElement = document.getElementById('result');
+
+            if (currentQuestion < questions.length) {
+                questionElement.textContent = questions[currentQuestion].question;
+                optionsElement.innerHTML = '';
+
+                questions[currentQuestion].options.forEach((option, index) => {
+                    const input = document.createElement('input');
+                    input.type = 'radio';
+                    input.name = 'answer';
+                    input.value = option;
+                    const label = document.createElement('label');
+                    label.className = 'option';
+                    label.id = `option${String.fromCharCode(65 + index)}`;
+
+                    label.appendChild(input);
+                    label.appendChild(document.createTextNode(` ${option}`));
+                    optionsElement.appendChild(label);
+                });
+
+                resultElement.textContent = '';
+            } else {
+                questionElement.textContent = '';
+                optionsElement.innerHTML = '';
+                showTotalResult();
+            }
+        }
+
+        function checkAnswer() {
+            const selectedOption = document.querySelector('input[name="answer"]:checked');
+            if (selectedOption) {
+                if (selectedOption.value === questions[currentQuestion].correctAnswer) {
+                    selectedOption.parentElement.style.backgroundColor = 'green';
+                    document.getElementById('result').textContent = 'Correct!';
+                    correctAnswers++; 
+                } else {
+                    selectedOption.parentElement.style.backgroundColor = 'red';
+                    document.getElementById('result').textContent = 'Incorrect';
+                }
+                currentQuestion++;
+                setTimeout(() => {
+                    displayQuestion();
+                }, 1000);
+            } else {
+                alert("Please select an option before checking the answer.");
+            }
+        }
+
+        function showTotalResult() {
+            const totalResultElement = document.getElementById('totalResult');
+            totalResultElement.textContent = `<Br>Total Correct Answers: ${correctAnswers} out of ${questions.length}`;
+        }
+        displayQuestion();
+    </script>
+</body>
+</html>

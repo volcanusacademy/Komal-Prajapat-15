@@ -1,0 +1,31 @@
+*{
+margin: 0;
+padding: 0;
+}
+#contanier{
+    width: 350px;
+    height: 500px;
+    background-color:black;
+     margin: 50px 0px 0px 300px;
+     border-radius: 20px;
+}
+@media screen and (max-width: 480px) {
+
+#contanier{
+    margin-left:10px ;
+    
+  }
+}
+
+.calculator form input{
+    border: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgb(109, 104, 104); 
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+
+}
