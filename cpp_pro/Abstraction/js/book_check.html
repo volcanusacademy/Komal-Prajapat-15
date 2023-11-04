@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<H1>Enter Book Name</H1>
+<input type="text" id="rr"> </input>
+<button onclick="chk()">Check Availability</button>
+<p id="rs">Eligebility</p>
+    <script type = "text/javascript">
+function chk(){
+    var res = document.getElementById("rr").value;
+    if(res == "Maths"){
+document.getElementById("rs").innerHTML="This book is available to issue";
+    }
+  else  if(res == "Physics"){
+document.getElementById("rs").innerHTML="This book is available to issue";
+    }
+    else  if(res == "Chemistry"){
+document.getElementById("rs").innerHTML="This book is available to issue";
+    }
+    else  if(res == "Biology"){
+document.getElementById("rs").innerHTML="This book is available to issue";
+    }
+    else  if(res == "Accounts"){
+document.getElementById("rs").innerHTML="This book is available to issue";
+    }
+    else{
+document.getElementById("rs").innerHTML="This book is not available to issue";
+    }
+}
+      </script>
+</body>
+</html>

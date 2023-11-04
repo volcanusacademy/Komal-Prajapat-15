@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   First Number  <input type="text" id="fn"> <br> <br>
+   Second Number  <input type="text" id="sn"> <br>
+<br>
+Operation<input type="text" id="rs">
+<button onclick="cal()">calculate</button>
+   <br>
+  Result: <h1 id="res">Result</h1>
+   <br><br>
+   <script>
+function cal(){
+  var x=  parseInt(document.getElementById("fn").value);
+  var y=  parseInt(document.getElementById("sn").value);
+  var op=  document.getElementById("rs").value;
+  switch(op){
+    case '+' :
+    document.getElementById("res").innerHTML = x+y;
+    break;
+    case '-' :
+    document.getElementById("res").innerHTML = x-y;
+    break;
+    case '*' :
+    document.getElementById("res").innerHTML = x*y;
+    break;
+    case '/' :
+    document.getElementById("res").innerHTML = x/y;
+    break;
+    default:
+    document.getElementById("res").innerHTML ="Invalid Input";
+  }
+}
+   </script>
+</body>
+</html>

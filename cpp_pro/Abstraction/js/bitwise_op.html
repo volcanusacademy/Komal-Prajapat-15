@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter your Age</h1>
+    <input type="number" id="age" placeholder="age"><BR><br></input>
+<button onclick="func()">Check</button>
+        <p id="result"> Eligiblity</p>
+            <script>
+            function func(){
+                var val = parseInt(document.getElementById("age").value);
+                if(val>18){
+                    document.getElementById("result").innerHtml="you are Eligible for Vote"
+                }
+                else{
+                    document.getElementById("result").innerHtml="you are not Eligible for Vote"
+                }
+            }
+</script>
+</body>
+</html>

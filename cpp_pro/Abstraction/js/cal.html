@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #result{
+            color:rgb(0, 60, 255)
+        }
+    </style>
+</head>
+<body>
+First number  <input type="text" id="first"><BR><BR>
+Second number  <input type="text" id="second">
+       <BR><BR>
+       Result :- <h1 id="result">result</h1>
+       <br><BR>
+        <h3 id="loop"></h3>
+       <button onclick=add()>+</button>
+       <button onclick=sub()>-</button>
+       <button>*</button>
+       <button>/</button>
+       <button>%</button>
+       <script>
+        function add(){
+           var num1 = parseInt(document.getElementById("first").value);
+           var num2 = parseInt(document.getElementById("second").value);
+           document.getElementById("result").innerHTML=num1+num2;
+           for(var i=0 ; i<=5 ; i++){
+             document.getElementById("loop").innerHTML = i; 
+           }
+        
+        }
+        function sub(){
+           var num1 = parseInt(document.getElementById("first").value);
+           var num2 = parseInt(document.getElementById("second").value);
+           document.getElementById("result").innerHTML=num1-num2;
+        
+        }
+       </script>
+</body>
+</html>
