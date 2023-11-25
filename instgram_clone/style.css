@@ -1,0 +1,97 @@
+body{
+    /* background: #000; */
+
+    margin: 0px;
+    padding: 0px;
+}
+.youtube_clone{
+    display: flex;
+
+}
+.left_sidebar{
+  
+    height: 100vh;
+    width: 15%;
+    padding: 10px;
+    padding-left: 30px;
+   
+}
+.logo{
+    font-size: xx-large;
+    display: inline;
+}
+.search{
+    margin-left: 200px;
+    width: 500px;
+    padding: 5px;
+    border-radius: 6px;
+}
+.searchbar{
+display: inline;
+}
+.bgimg img{
+  border-radius: 2%;
+   width: 80%;
+   height: 200px;
+   margin-top: 10px;
+}
+.noti{
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    font-size: xx-large;
+}
+.account_dp{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+
+.wdm_img{
+    display: flex;
+    flex-direction: row;
+}
+.linkedin_link{
+    color: blue;
+}
+.more{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.sub{
+    padding: 10px;
+    width: 100px;
+    border-radius: 20%;
+}
+
+
+/* *********** viedo bar**** */
+.menu2 a li{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: larger;
+    list-style-type: none;
+ 
+}
+a{
+    text-decoration: none;
+}
+.menu2 a li:hover{
+    border-bottom: 2px solid black;
+}
+.menu2{
+    display: flex;
+    margin-left: 20px;
+    font-size: large;
+ 
+}
+.viedo_con{
+  
+    gap: 1rem;
+    display: flex;
+}
+.box1 img{
+    border-radius: 5%;
+}
