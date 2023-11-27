@@ -1,0 +1,51 @@
+*{
+    color:white;
+    font-size: medium;
+    
+}
+.navbar-light .navbar-brand {
+    font-size: x-large;
+    font-family: 'Helvetica', sans-serif;
+    margin-right: 150px;
+}
+a{
+    margin-left: 10px;
+}
+.poster{
+    position: relative;
+    top: -20px;
+}
+.poster_items{
+    color: black;
+    background: white;
+}
+.posterImage_overlay{
+    color: blue;
+    position: relative;
+    top: -200px;
+    text-align: left;
+    padding-left: 10px;
+    width: 500px;
+
+}
+.posterImage img{
+    height: 500px;
+    margin-bottom: 0px;
+}
+.posterImage__rating{
+    margin-left: 10px;
+    color: red;
+}
+.fa-satr{
+    background: red;
+    color: red;
+}
+.carousel .control-dots{
+    position: relative;
+    top: 550px;
+}
+ .movielist{
+    position: relative;
+    top: -200px;
+    
+} 
