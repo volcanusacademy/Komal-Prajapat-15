@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Custom styles for the navbar */
+        body {
+            padding-top: 70px; /* Adjust body padding for fixed navbar */
+        }
+
+        .navbar-custom {
+            background-color: #3498db; /* Change background color */
+            color: #ffffff; /* Change text color */
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <a class="navbar-brand" href="#">Your Logo/Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 2. Grid Layout -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 grid-item">
+            <!-- Content for the first grid item -->
+            <img src="https://tse3.mm.bing.net/th?id=OIP.IhiqRWFamp-enjV2csKdzwHaE8&pid=Api&P=0&h=180" alt="Image 1">
+            <h3>Grid Item 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 grid-item">
+            <!-- Content for the second grid item -->
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Jc9gHh74JLUo6eJOVKRcAgHaE7&pid=Api&P=0&h=180" alt="Image 2">
+            <h3>Grid Item 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 grid-item">
+            <!-- Content for the third grid item -->
+            <img src="https://tse3.explicit.bing.net/th?id=OIP.4d7Emr_d4fJnEE6zK7pj_wHaFK&pid=Api&P=0&h=180" alt="Image 3">
+            <h3>Grid Item 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
+
+<!-- 3. Styled Form with Bootstrap -->
+<form class="container">
+    <div class="form-group ">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+    </div>
+    <label for=""></label>
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="subscribe">
+        <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+<!-- 4. **Using Bootstrap Modals:** -->
+
+
+
+<!-- 5. **Carousel for Image Slideshow:** -->
+<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image1.jpg" class="d-block w-100" alt="Image 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Caption 1</h5>
+                <p>Description for Image 1.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image2.jpg" class="d-block w-100" alt="Image 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Caption 2</h5>
+                <p>Description for Image 2.</p>
+            </div>
+        </div>
+        <!-- Add more carousel items as needed -->
+    </div>
+    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<!-- Bootstrap JavaScript and jQuery (Make sure to include jQuery before Bootstrap's JavaScript) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" integrity="sha384-pzjw8Ag01z7vKzYq0xNy3VGa1MSUUxSToK1T7BRpfd5F/P8ZM2JeCt3AOpKjpCKY" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6uEXCeWOlV9eU7fsFsfFAxMWX4Uq/d1T" crossorigin="anonymous"></script>
+
+</body>
+</html>
