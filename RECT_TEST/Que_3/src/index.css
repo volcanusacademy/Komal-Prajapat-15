@@ -1,4 +1,13 @@
 .container
 {
-    
+ background: #000;
+ color: white;
+ width: 500px;
+ border-radius: 30px;   
+ padding: 10px;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+body{
+    margin: 10px;
+    background: #c4a7a7;
 }
