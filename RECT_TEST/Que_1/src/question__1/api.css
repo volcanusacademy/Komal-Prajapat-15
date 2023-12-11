@@ -1,0 +1,25 @@
+body{
+    background: #b6aeae;
+}.container-h{
+ text-align: center;
+
+    
+}
+.container-h:hover{
+    color: brown;
+    font-size: xx-large;
+}
+h2:hover{
+    background: white;
+color: black;
+border: 2px solid black;
+}
+h2{
+    background: #000;
+    width:900px;
+    margin-left: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
+}
